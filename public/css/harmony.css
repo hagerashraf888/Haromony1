@@ -1,0 +1,140 @@
+body{
+    margin: 0px auto;
+    font-family: Amiri;
+    background-color: #0F1628;
+}
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    src: url("../fonts/Amiri/Amiri-Regular.ttf");
+    font-family: Amiri;
+}
+
+/* harmony */
+header{
+    height: 100%;
+}
+.banner{
+    height: 100%;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+.harmony{
+    background-color: rgba(15, 22, 40, .7);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.logo{
+    /*background-color: blue;*/
+    width: 20%;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+.logo img{
+    height: 8vw;
+    width: 8vw;
+    margin-top: 1.5vw;
+    border: #C1A673 1px solid;
+}
+nav{
+    /*background-color: blueviolet;*/
+    width: 40%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    padding-top: 5%;
+    color: #C1A673;
+}
+nav a:hover{
+    font-weight: bolder;
+}
+#para{
+    position: absolute;
+    top: 22vw;
+    left: 6vw;
+    line-height: 10px;
+    color: #C1A673;
+    font-size: 3vw;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #0F1628, 0 0 20px #0F1628, 0 0 30px #C1A673, 0 0 40px #C1A673, 0 0 50px #C1A673, 0 0 60px #C1A673, 0 0 70px #C1A673;
+    }
+    to {
+      text-shadow: 0 0 20px #0F1628, 0 0 30px #0F1628, 0 0 40px #0F1628, 0 0 50px #0F1628, 0 0 60px #0F1628, 0 0 70px #0F1628, 0 0 80px #0F1628;
+    }
+  }
+
+  .button {
+    border-radius: 4vw;
+    background-color: #0F1628;
+    border: none;
+    color: #C1A673;
+    text-align: center;
+    font-size: 2vw;
+    width: 15vw;
+    height: 4vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: absolute;
+    top: 43vw;
+    right: 2vw;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #0F1628, 0 0 20px #0F1628, 0 0 30px #C1A673, 0 0 40px #0F1628, 0 0 50px #C1A673, 0 0 60px #0F1628, 0 0 70px #0F1628;
+    }
+    to {
+      text-shadow: 0 0 20px #0F1628, 0 0 30px #0F1628, 0 0 40px #0F1628, 0 0 50px #0F1628, 0 0 60px #0F1628, 0 0 70px #0F1628, 0 0 80px #0F1628;
+    }
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -2vw;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 2vw;
+    
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+    
+  }
+

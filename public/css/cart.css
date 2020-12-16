@@ -1,0 +1,181 @@
+body{
+    margin: 0px auto;
+    font-family: Amiri;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  @font-face {
+    src: url("../fonts/Amiri/Amiri-Regular.ttf");
+    font-family: Amiri;
+  }
+ 
+  p {
+    font-size: 1.5vw;
+    color: #0F1628;
+  }
+  
+  input {
+    border: 5px solid #C1A673;
+    padding: 0.7vw 0.5vw; 
+    font-size: 1.5vw;
+    color: #C1A673;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 10vw;
+    width: 100%;
+    overflow: hidden; 
+    margin-right: 1.5vw;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 4vw auto;  
+    overflow: hidden;
+    position: relative;
+    border-radius: 1vw;
+    background-color: rgba(15, 22, 40, .7);
+    box-shadow: 0 2vw 4vw 0 rgba(15, 22, 40, .7);
+
+  }
+  
+  .cart {
+    margin: 0px auto;
+    overflow: hidden;
+  }
+  
+  .table {
+    background-color: white;
+    border-radius: 1vw;
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 1vw;
+  }
+  
+  
+  .layout-inline > * {
+    display: inline-block;
+  }
+  
+  .align-center {
+    text-align: center;
+  }
+  
+  .th {
+    background: #0F1628;
+    /*color: #fff;*/
+    color: #C1A673;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2vw;
+  }
+  
+  .tf {
+    background: #0F1628;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 2vw;  
+  }
+  
+  .tf p {
+    /*color: #fff;*/
+    color: #C1A673;
+    font-weight: bold;
+  }
+  
+  .col {
+    padding: 1vw;
+    width: 12%;
+  }
+  
+  .col-pro {
+    width: 44%;
+  }
+  
+  .col-pro > * {
+    vertical-align: middle;
+  }
+  
+  .col-qty {
+    text-align: center;
+    width: 17%;
+  }
+  
+  .col-numeric p {
+    font: bold 2.5vw Amiri;
+  }
+  
+  .col-total p {
+    /*color: #12c8b1;*/
+    /*color: #C1A673;*/
+    color: #0F1628;
+    font-weight: bolder;
+  }
+  
+  .tf .col {
+    width: 20%;
+  }
+  
+  .row > div {
+    vertical-align: middle;
+  }
+  
+  .row-bg2 {
+    background: #f7f7f7;
+  }
+  
+  .col-qty > * {
+    vertical-align: middle; 
+  }
+  
+  .col-qty > input {
+    max-width: 2.6em;
+  }
+  
+  
+  a.qty {
+    width: 3vw;
+    line-height: 3vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+    color: #C1A673;
+    background-color: #0F1628;
+    border: #C1A673 1px solid;
+    border-radius: 2vw;
+
+  }
+  
+  a.qty:hover {
+      background-color: #C1A673;
+      color: #0F1628;
+      border: solid 1px #0F1628;
+  }
+  .transition {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  @media screen and ( max-width: 755px) {
+    .container {
+      width: 98%;
+    }
+    
+    .col-pro {
+      width: 35%;
+    }
+    
+    .col-qty {
+      width: 22%;
+    }
+    
+    img {
+      max-width: 100%;
+      margin-bottom: 1em;
+    }
+  }
